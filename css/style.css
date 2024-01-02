@@ -1,0 +1,141 @@
+.container {
+    text-align: center;
+    font-family: Arial;
+  }
+  
+.description {
+    width: 600px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    font-size: 14px;
+  }
+  .luas-button {
+    border-color: rgb(121, 121, 231);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    color: rgb(83, 83, 207);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+  }
+  
+.luas-button:hover {
+  border-color: rgb(83, 83, 207);
+  background-color: rgb(83, 83, 207);
+  color: white;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.gambar1 {
+  width: 200px;
+}
+
+.keliling-button {
+  border-color: rgb(121, 121, 231);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  color: rgb(83, 83, 207);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+
+.keliling-button:hover {
+  border-color: rgb(83, 83, 207);
+  background-color: rgb(83, 83, 207);
+  color: white;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+
+.gambar2 {
+  width: 200px;
+}
+
+#luas-segitiga {
+  text-align: center;
+  display: none;
+}
+
+#form-alas {
+  background-color: aliceblue;
+  width: 48%;
+  border-radius: 10px;
+  border-color: gray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+  border-style: solid;
+}
+
+#form-tinggi {
+  border-style: solid;
+  margin-top: 5px;
+  background-color: aliceblue;
+  width: 48%;
+  border-radius: 10px;
+  border-color: gray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+#keliling-segitiga {
+  text-align: center;
+  display: none;
+}
+
+#form-sisi1 {
+  border-style: solid;
+  margin-top: 5px;
+  background-color: aliceblue;
+  width: 30%;
+  border-radius: 10px;
+  border-color: gray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+#form-sisi2 {
+  border-style: solid;
+  margin-top: 5px;
+  background-color: aliceblue;
+  width: 30%;
+  border-radius: 10px;
+  border-color: gray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+#form-sisi3 {
+  border-style: solid;
+  margin-top: 5px;
+  background-color: aliceblue;
+  width: 30%;
+  border-radius: 10px;
+  border-color: gray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}

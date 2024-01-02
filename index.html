@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Welcome to Katik
+        </h1>
+        <p class="description">
+            Halo Kawan!!Pada website ini anda dapat menghitung luas dan keliling segitiga,
+            dengan memasukkan nilai tinggi dan lebar segitiga anda dapat mencari 
+            luas segitiga dengan satu klik saja. Selamat Mencoba!
+        </p>
+
+    <!--Display untuk perhitungan luas segitiga-->
+    <button class="luas-button" onclick="display_luas()">
+        Luas
+    </button>
+    <div id="luas-segitiga">
+        <img src="image/LuasSegitiga.png" alt="Gambar Segitiga" class="gambar1">
+        <p class="rumus-luas">
+            Luas Segitiga: 1&frasl;2 &times a &times t
+        </p>
+        <form id="luas">
+            <input type="text" id="form-alas" placeholder="Alas Segitiga">
+            <input type="text" id="form-tinggi" placeholder="Tinggi Segitiga">
+        </form>
+        <p id="rumus_luas"></p>
+        <p id="output_luas"></p>
+        <button class="hitung-button" onclick="luas_segitiga()">Hitung</button>
+    </div>
+
+        <br>
+        
+    <!--Display untuk perhitungan keliling segitiga-->
+    <button class="keliling-button" onclick="display_keliling()">Keliling</button>
+    <div id="keliling-segitiga">
+        <img src="image/KelilingSegitiga.png" alt="Gambar Segitiga" class="gambar2">
+        <p class="rumus-keliling">
+            Keliling Segitiga: Sisi 1 + Sisi 2 + Sisi 3
+        </p>
+        <form id="keliling">
+            <input type="text" id="form-sisi1" placeholder="Sisi 1 Segitiga">          
+            <input type="text" id="form-sisi2" placeholder="Sisi 2 Segitiga">
+            <input type="text" id="form-sisi3" placeholder="Sisi 3 Segitiga">
+        </form>
+        <p id="rumus_keliling"></p>
+        <p id="output_keliling"></p>
+        <button class="hitung" onclick="keliling_segitiga()">Hitung</button>
+    </div>
+</body>
+</html>
