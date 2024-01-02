@@ -4,12 +4,13 @@
   }
   
 .description {
-    width: 600px;
-    margin-top: -20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; 
-    font-size: 14px;
+    @media only screen and (max-width:600px) {
+      margin-top: -20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; 
+      font-size: 14px;
+    }
   }
   .luas-button {
     border-color: rgb(121, 121, 231);
@@ -138,4 +139,31 @@
   padding-top: 8px;
   padding-bottom: 8px;
   margin-bottom: 10px;
+}
+
+.hitung-button{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+  border-radius: 10px;
+  background-color: rgb(83, 83, 207);
+  border-color: rgb(83, 83, 207);
+  color: white;
+  font-size: 12px;
+  border-style: solid;
+  transition: all 0.5s;
+}
+
+.hitung-button:hover{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+  border-radius: 10px;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(83, 83, 207);
+  color: rgb(83, 83, 207);
+  font-size: 12px;
 }
