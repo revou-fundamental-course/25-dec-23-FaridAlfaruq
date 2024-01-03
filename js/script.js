@@ -1,3 +1,21 @@
+function reset_luas() {
+    // Mengatur ulang nilai formulir untuk perhitungan luas segitiga saja
+    document.getElementById("form-alas").value = "";
+    document.getElementById("form-tinggi").value = "";
+
+    document.getElementById("rumus_luas").innerText = "";
+    document.getElementById("output_luas").innerText = "";
+}
+
+function reset_keliling(){
+    document.getElementById("form-sisi1").value = "";
+    document.getElementById("form-sisi2").value = "";
+    document.getElementById("form-sisi3").value = "";
+
+    document.getElementById("rumus_keliling").innerText = "";
+    document.getElementById("output_keliling").innerText = "";
+}
+
 function luas_segitiga() {
     var alas = parseFloat(document.getElementById("form-alas").value);
     var tinggi = parseFloat(document.getElementById("form-tinggi").value);

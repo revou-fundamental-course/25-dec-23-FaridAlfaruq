@@ -141,7 +141,7 @@
   margin-bottom: 10px;
 }
 
-.hitung-button{
+.hitung-button, .reset-button {
   padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 1%;
@@ -156,6 +156,19 @@
 }
 
 .hitung-button:hover{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+  border-radius: 10px;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(83, 83, 207);
+  color: rgb(83, 83, 207);
+  font-size: 12px;
+}
+
+.reset-button:hover{
   padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 1%;
