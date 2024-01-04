@@ -1,3 +1,4 @@
+/* fungsi reset form */
 function reset_luas() {
     document.getElementById("form-alas").value = "";
     document.getElementById("form-tinggi").value = "";
@@ -14,13 +15,7 @@ function reset_keliling(){
     document.getElementById("rumus_keliling").innerText = "";
     document.getElementById("output_keliling").innerText = "";
 }
-
-function luas_segitiga() {
-    if(index_eror = false){
-
-    }
-}
-
+/* fungsi display */
 function display_luas(){
     var luasElement = document.getElementById("display_luas");
 
@@ -40,7 +35,7 @@ function display_keliling() {
         kelilingElement.style.display = "block";
     }
 }
-
+/* perhitungan dan eror */
 function eror_luas(){
     var alas = document.getElementById("form-alas");
     var tinggi = document.getElementById("form-tinggi");
