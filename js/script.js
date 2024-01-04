@@ -1,5 +1,4 @@
 function reset_luas() {
-    // Mengatur ulang nilai formulir untuk perhitungan luas segitiga saja
     document.getElementById("form-alas").value = "";
     document.getElementById("form-tinggi").value = "";
 
@@ -17,6 +16,7 @@ function reset_keliling(){
 }
 
 function luas_segitiga() {
+    if(index_eror = false){
     var alas = parseFloat(document.getElementById("form-alas").value);
     var tinggi = parseFloat(document.getElementById("form-tinggi").value);
     var hasil = 0.5 * alas * tinggi;
@@ -24,10 +24,11 @@ function luas_segitiga() {
 
     document.getElementById("rumus_luas").innerHTML = rumus_luas;    
     document.getElementById("output_luas").innerText = "Hasil perhitungan luas adalah " + hasil;
+    }
 }
 
-
 function keliling_segitiga(){
+    if(index_eror = false){
     var sisi1 = parseFloat(document.getElementById("form-sisi1").value);
     var sisi2 = parseFloat(document.getElementById("form-sisi2").value);
     var sisi3 = parseFloat(document.getElementById("form-sisi3").value);
@@ -36,10 +37,11 @@ function keliling_segitiga(){
 
     document.getElementById("rumus_keliling").innerText = rumus_keliling;
     document.getElementById("output_keliling").innerText = "Hasil perhitungan keliling adalah " + hasil;
+    }
 }
 
 function display_luas(){
-    var luasElement = document.getElementById("luas-segitiga");
+    var luasElement = document.getElementById("display_luas");
 
     if (luasElement.style.display === "block") {
         luasElement.style.display = "none";
@@ -49,11 +51,32 @@ function display_luas(){
 }
 
 function display_keliling() {
-    var kelilingElement = document.getElementById("keliling-segitiga");
+    var kelilingElement = document.getElementById("display_keliling");
 
     if (kelilingElement.style.display === "block") {
         kelilingElement.style.display = "none";
     } else {
         kelilingElement.style.display = "block";
+    }
+}
+
+var index_eror = false
+function eror() {
+    var alas = document.getElementById("form-alas");
+    var tinggi = document.getElementById("form-tinggi");
+    var sisi1 = document.getElementById("form-sisi1");
+    var sisi2 = document.getElementById("form-sisi2");
+    var sisi3 = document.getElementById("form-sisi3");
+
+    if (alas.value.trim() === "" || tinggi.value.trim() === "" || sisi1.value.trim() === "" ||
+        sisi2.value.trim() === "" || sisi3.value.trim() === "") {
+        alert('Masukkan Angka Yang Valid!');
+        index_eror = true;
+    }else if (parseFloat(alas.value) === 0 || parseFloat(tinggi.value) === 0 || parseFloat(sisi1.value) === 0 ||
+                parseFloat(sisi2.value) === 0 || parseFloat(sisi3.value) === 0) {
+        alert('Alas atau tinggi segitiga tidak mungkin bernilai 0!');
+        index_eror = true;
+    }else{
+        index_eror = false;
     }
 }

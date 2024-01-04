@@ -1,182 +1,118 @@
-.container {
-    text-align: center;
-    font-family: Arial;
-  }
-  
+.header, .footer {
+  padding: 1%;
+  background-color:#3A4445;
+  border-radius: 15px;
+  margin: 2%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  color: #FAEED1;
+  text-align: center;
+}
+
+.title{
+  font-size: 2em;
+}
+
 .description {
-    @media only screen and (max-width:600px) {
-      margin-top: -20px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center; 
-      font-size: 14px;
-    }
-  }
-  .luas-button {
-    border-color: rgb(121, 121, 231);
-    border-style: solid;
-    background-color: rgb(255, 255, 255);
-    color: rgb(83, 83, 207);
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    font-size: 17px;
-    margin-bottom: 10px;
-    transition: all 0.5s;
-  }
-  
-.luas-button:hover {
-  border-color: rgb(83, 83, 207);
-  background-color: rgb(83, 83, 207);
-  color: white;
-  width: 100%;
+  font-size: 14px;
+  font-family: arial;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.container {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* button-style*/
+.luas-button, .keliling-button{
+  border: none;
+  background-color: #36777D;
+  color: #FAEED1;
+  width: 40%;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
   font-size: 17px;
-  margin-bottom: 10px;
-}
-
-.gambar1 {
-  width: 200px;
-}
-
-.keliling-button {
-  border-color: rgb(121, 121, 231);
-  border-style: solid;
-  background-color: rgb(255, 255, 255);
-  color: rgb(83, 83, 207);
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  font-size: 17px;
-  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   transition: all 0.5s;
-}
-
-.keliling-button:hover {
-  border-color: rgb(83, 83, 207);
-  background-color: rgb(83, 83, 207);
-  color: white;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  font-size: 17px;
-  margin-bottom: 10px;
-}
-
-
-.gambar2 {
-  width: 200px;
-}
-
-#luas-segitiga {
-  text-align: center;
-  display: none;
-}
-
-#form-alas {
-  background-color: aliceblue;
-  width: 48%;
-  border-radius: 10px;
-  border-color: gray;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 5px;
-  border-style: solid;
-}
-
-#form-tinggi {
-  border-style: solid;
-  margin-top: 5px;
-  background-color: aliceblue;
-  width: 48%;
-  border-radius: 10px;
-  border-color: gray;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 10px;
-}
-
-#keliling-segitiga {
-  text-align: center;
-  display: none;
-}
-
-#form-sisi1 {
-  border-style: solid;
-  margin-top: 5px;
-  background-color: aliceblue;
-  width: 30%;
-  border-radius: 10px;
-  border-color: gray;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 10px;
-}
-
-#form-sisi2 {
-  border-style: solid;
-  margin-top: 5px;
-  background-color: aliceblue;
-  width: 30%;
-  border-radius: 10px;
-  border-color: gray;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 10px;
-}
-#form-sisi3 {
-  border-style: solid;
-  margin-top: 5px;
-  background-color: aliceblue;
-  width: 30%;
-  border-radius: 10px;
-  border-color: gray;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .hitung-button, .reset-button {
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-  padding-left: 1%;
+  border: none;
+  background-color: #5c9481;
+  color: #FAEED1;
+  width: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 10px;
-  background-color: rgb(83, 83, 207);
-  border-color: rgb(83, 83, 207);
-  color: white;
-  font-size: 12px;
-  border-style: solid;
+  font-size: 17px;
+  margin-left: 5px;
+  margin-right: 5px;
   transition: all 0.5s;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.hitung-button:hover{
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-  padding-left: 1%;
-  border-radius: 10px;
-  background-color: white;
-  border-style: solid;
-  border-color: rgb(83, 83, 207);
-  color: rgb(83, 83, 207);
-  font-size: 12px;
+/* button-hover */
+.luas-button:hover, .keliling-button:hover{ 
+  background-color: #2c6267;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.reset-button:hover{
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-  padding-left: 1%;
-  border-radius: 10px;
-  background-color: white;
+.hitung-button:hover, .reset-button:hover {
+  background-color: #4b7768;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* button-active */
+.luas-button:active, .keliling-button:active,.hitung-button:active, .reset-button:active{
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+/* image-style */
+.gambar1{
+  width: 400px;
+  margin-top: 1%;
+} .gambar2{
+  width: 300px;
+  margin-top: 1%;
+}
+
+/* display setting */
+#display_luas{
+    width: 70%;
+    padding: 20px;
+    border-radius: 15px;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+} 
+
+#display_keliling {
+  width: 70%;
+  padding: 20px;
+  border-radius: 15px;
+  display: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+}
+
+/* form style */
+#form-alas, #form-tinggi, #form-sisi1, #form-sisi2, #form-sisi3{
+  background-color: #f7f0e8;
+  border-radius: 8px;
+  border-color: #3A4445 ;
   border-style: solid;
-  border-color: rgb(83, 83, 207);
-  color: rgb(83, 83, 207);
-  font-size: 12px;
+  padding: 1%;
+  margin: auto 5px;
 }
